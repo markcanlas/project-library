@@ -3,12 +3,7 @@ const addBtn = document.querySelector('.add-btn');
 const popupBtn = document.querySelector('.popup-wrapper');
 const closeBtn = document.querySelector('.close');
 
-let myLibrary = [
-    {title: 'harrypotter', author: 'jwrowling', totalPages: '3000', bookmark: 'not read'},
-    {title: 'avengers', author: 'wars', totalPages: '300', bookmark: 'read'},
-    {title: 'one piece', author: 'oda', totalPages: '5000', bookmark: 'not yet'},
-    {title: 'one piece', author: 'oda', totalPages: '5000', bookmark: 'not yet'}
-];
+let myLibrary = [];
 
 addBtn.onclick = () => popupBtn.style.display = 'block';
 closeBtn.onclick = () => popupBtn.style.display = 'none';
