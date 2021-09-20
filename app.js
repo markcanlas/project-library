@@ -1,7 +1,7 @@
 const container = document.querySelector('.book-container');
 const addBtn = document.querySelector('.add-btn');
-const popup = document.querySelector('.popup-wrapper');
-const form = document.querySelector('.myForm');
+const popupBtn = document.querySelector('.popup-wrapper');
+const closeBtn = document.querySelector('.close');
 
 let myLibrary = [
     {title: 'harrypotter', author: 'jwrowling', totalPages: '3000', bookmark: 'not read'},
@@ -10,9 +10,9 @@ let myLibrary = [
     {title: 'one piece', author: 'oda', totalPages: '5000', bookmark: 'not yet'}
 ];
 
-addBtn.onclick = () => popup.style.display = 'block';
-popup.onclick = () => popup.style.display = 'none';
-form.onclick = () => popup.style.display = 'block';
+addBtn.onclick = () => popupBtn.style.display = 'block';
+closeBtn.onclick = () => popupBtn.style.display = 'none';
+
 
 
 class Book {
@@ -53,7 +53,6 @@ function displayBooks() {
         h2.textContent = `Written by: ${book.author}`
         h3.textContent = `Total pages of: ${book.totalPages}`
         btn.innerHTML = `Book have ${book.bookmark}`
-
     })
 }
 displayBooks();
