@@ -12,9 +12,8 @@ body {
 }
 
 header {
-    height: 75px;
+    height: 90px;
     text-align: center;
-    margin-top: 20px;
 }
 
 main {
@@ -22,6 +21,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 50px;
 }
 
 footer {
@@ -54,7 +54,7 @@ label {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     margin-top: 10px;
-    gap: 20px;
+    gap: 40px;
     width: 95%;
     align-items: center;
 }
@@ -148,11 +148,84 @@ input[type=checkbox]{
     transition: 0.3s;
     border-radius: 5px;
     text-align: center;
-    height: 220px;
+    height: 300px;
     margin-bottom: 20px;
     padding: 10px;
     line-height: 2  ;
+    background-color: #d0ebff;
+    color: #5C2300;
+    position: relative;
+    padding-top: 50px;
+
 }
+
+.card h1, h3 {
+    /* border-bottom: 1px solid; */
+    line-height: 40px;
+}
+
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.add-btn {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
+    height: 56px;
+    width: 184px;
+    font-size: 26px;
+    text-align: center;
+    border-radius: 50px;
+}
+.add-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #d0ebff;
+    color:#5C2300;
+}
+
+.read-btn {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.unread-btn {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: crimson;
+    color: #d0ebff;
+}
+
+.remove-btn {
+    position: absolute;
+    background-color: crimson;
+    color: #fff;
+    top: -10px;
+    right: 10px;
+    height: 27px;
+    width: 27x;
+    text-align: start;
+    border-radius: 5px;
+}
+
+.book-icon {
+    height: 70px; 
+    width: 70px;
+    /* display: inline; */
+    position: absolute;
+    stroke: #FF8B45;
+    left: 33%;
+    top: 1.7%;
+}
+header h1 {
+    background-color: #d0ebff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-style: oblique;
+    font-size: 64px;
 }
