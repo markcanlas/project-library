@@ -5,32 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <title>Project Library</title>
   </head>
   <body>
-    <div class="container">
-    <header class="header">
-      <svg xmlns="http://www.w3.org/2000/svg" class="book-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-      </svg>
-      <h1> MY LIBRARY</h1>
+    
+    <header>
+     
+      
+      <h1>BOOK LIST</h1>
     </header>
 
     <main class="main">
-      <button class="add-btn">Add Book</button>
+      <button class="add-btn"><span class="book-icon">📙</span> Add Book </button>
       <div class="book-container"></div>
         <div class="popup-wrapper">
           <form class="myForm">
               <h3>Add New Book</h3>
-            <input class = "title" type="text" name="title" placeholder="Title" />
-            <input class = "author" type="text" name="author" placeholder="Author" />
-            <input class = "total-pages" type="text" name="totalPages" placeholder="Pages" />
+            <input class = "title" type="text" name="title" placeholder="Title" required/>
+            <input class = "author" type="text" name="author" placeholder="Author" required/>
+            <input class = "total-pages" type="text" name="totalPages" placeholder="Pages" maxlength="4" required/>
             <label for="read">Have you read it</label>
             <input class= "check-box" type="checkbox" name="read" id="read" />
             <div class="wrapper-btn">
@@ -42,7 +38,7 @@
     </main>
 
     <footer class="footer">Copyright 2021 markcanlas</footer>
-  </div>
+
     <script src="app.js"></script>
   </body>
 </html>

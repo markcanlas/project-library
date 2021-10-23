@@ -39,9 +39,9 @@ class UI {
     card.append(btn);
     card.append(btn2);
 
-    h1.textContent = `${book.title}`;
+    h1.textContent = `${book.title.toUpperCase()}`;
     h2.textContent = `By: ${book.author}`;
-    h3.textContent = `Pages: ${book.totalPages}`;
+    h3.textContent = `${book.totalPages} pages`;
     btn.innerHTML = book.bookmark ? `READ` : `UNREAD`;
     btn2.innerHTML = `X`;
   }
@@ -64,8 +64,6 @@ class UI {
     }
   }
 }
-
-// document.addEventListener('DOMContentLoaded', UI.displayBooks)
 
 form.onsubmit = (e) => {
   e.preventDefault();
