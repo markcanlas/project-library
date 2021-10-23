@@ -1,231 +1,232 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
 body {
-    font-family: 'Lato', sans-serif;
-    display: flex;
-    flex-direction: column;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-    height: 90px;
-    text-align: center;
+  height: 90px;
+  text-align: center;
 }
 
 main {
-    min-height: 85vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 50px;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
 }
 
 footer {
-    height: 20px;
-    text-align: center;
-    margin-top: auto;
+  height: 20px;
+  text-align: center;
+  margin-top: auto;
 }
 
 .container {
-    min-height: 100%;
-    position: relative;
+  min-height: 100%;
+  position: relative;
+  background-image: url("Book Pics\\janko-ferlic-sfL_QOnmy00-unsplash.jpg");
+  background-size: cover;
 }
 
-.myForm h3, label {
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 20px;
+.myForm h3,
+label {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .myForm h3 {
-    grid-column: 1 / 5;
+  grid-column: 1 / 5;
 }
 
 label {
-    justify-self: self-start;
-    grid-column: 1 / 4;
+  justify-self: self-start;
+  grid-column: 1 / 4;
 }
 
 .book-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    margin-top: 10px;
-    gap: 40px;
-    width: 95%;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-top: 10px;
+  gap: 40px;
+  width: 95%;
+  align-items: center;
 }
 
 .myForm button {
-   width: 150px;
-   height: 70px;
-   font-size: 26px;
-   border-radius: 10px;
+  width: 150px;
+  height: 70px;
+  font-size: 26px;
+  border-radius: 10px;
 }
 .wrapper-btn {
-    width: 300px;
-    display: flex;
-    gap: 5px;
+  width: 300px;
+  display: flex;
+  gap: 5px;
 }
 
 .myForm .close {
-    background-color: crimson;
-    color: #fff5f5;
-
+  background-color: crimson;
+  color: #fff5f5;
 }
 
-button{
-    display: block;
-    margin: 20px auto;
-    background: #FF8B45;
-    color: #ffffff;
-    bottom: 0;
-    padding: 6px 10px;
-    font-weight: 600;
-    border-style: none;
-    cursor: pointer;
+button {
+  display: block;
+  margin: 20px auto;
+  background: #ff8b45;
+  color: #ffffff;
+  bottom: 0;
+  padding: 6px 10px;
+  font-weight: 600;
+  border-style: none;
+  cursor: pointer;
 }
 
-input[type=text] {
-    height: 70px;
-    width: 300px;
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border-style: none;
-    grid-column: 1 / 4;
-    padding: 10px;;
-    
+input[type="text"] {
+  height: 70px;
+  width: 300px;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border-style: none;
+  grid-column: 1 / 4;
+  padding: 10px;
 }
-input[type=checkbox]{
-    margin-top: 8px;
-    width: 20px;
-    height: 20px;
-    justify-self: flex-end;
+input[type="checkbox"] {
+  margin-top: 8px;
+  width: 20px;
+  height: 20px;
+  justify-self: flex-end;
 }
 
-.popup-wrapper{
-    background: rgba(0,0,0,0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    color: #FF8B45;
+.popup-wrapper {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: #ff8b45;
 }
 
 ::placeholder {
-    color: #FF8B45;
-    text-align: center;
+  color: #ff8b45;
+  text-align: center;
 }
 
 .myForm {
-    font-family: arial;
-    text-align: center;
-    width: 100%;
-    max-width: 400px;
-    height: 100%;
-    max-height: 600px;
-    margin: 5% auto;
-    padding: 40px;
-    background: #d0ebff;
-    border-style: none;
-    border-radius: 10px;
-    display: grid;
-    text-align: center;
-    justify-content: center;
-    grid-template-columns: 150px 75px 35px 35px;
-
+  font-family: arial;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  max-height: 600px;
+  margin: 5% auto;
+  padding: 40px;
+  background: #d0ebff;
+  border-style: none;
+  border-radius: 10px;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  grid-template-columns: 150px 75px 35px 35px;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px;
-    text-align: center;
-    height: 300px;
-    margin-bottom: 20px;
-    padding: 10px;
-    line-height: 2  ;
-    background-color: #d0ebff;
-    color: #5C2300;
-    position: relative;
-    padding-top: 50px;
-
+  box-shadow: inset 9px 0px 7px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  text-align: center;
+  height: 300px;
+  margin-bottom: 20px;
+  padding: 10px;
+  line-height: 2;
+  background-image: linear-gradient(#fff, #99e9f2 40%, #fff);
+  color: #5c2300;
+  position: relative;
+  padding-top: 50px;
+  /* border-radius: 5% 2% 2% 5%; */
 }
 
-.card h1, h3 {
-    /* border-bottom: 1px solid; */
-    line-height: 40px;
+.card h1,
+h3 {
+  /* border-bottom: 1px solid; */
+  line-height: 40px;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.1);
 }
 
 .add-btn {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
-    height: 56px;
-    width: 184px;
-    font-size: 26px;
-    text-align: center;
-    border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 56px;
+  width: 184px;
+  font-size: 26px;
+  text-align: center;
+  border-radius: 50px;
 }
 .add-btn:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    background-color: #d0ebff;
-    color:#5C2300;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: #d0ebff;
+  color: #5c2300;
 }
 
 .read-btn {
-    width: 80px;
-    height: 40px;
-    text-align: center;
-    margin-top: 30px;
-    border-radius: 5px;
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 5px;
 }
 
 .unread-btn {
-    width: 80px;
-    height: 40px;
-    text-align: center;
-    margin-top: 30px;
-    border-radius: 5px;
-    background-color: crimson;
-    color: #d0ebff;
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 5px;
+  background-color: crimson;
+  color: #d0ebff;
 }
 
 .remove-btn {
-    position: absolute;
-    background-color: crimson;
-    color: #fff;
-    top: -10px;
-    right: 10px;
-    height: 27px;
-    width: 27x;
-    text-align: start;
-    border-radius: 5px;
+  position: absolute;
+  background-color: crimson;
+  color: #fff;
+  top: -10px;
+  right: 10px;
+  height: 27px;
+  width: 27x;
+  text-align: start;
+  border-radius: 5px;
 }
 
 .book-icon {
-    height: 70px; 
-    width: 70px;
-    /* display: inline; */
-    position: absolute;
-    stroke: #FF8B45;
-    left: 33%;
-    top: 1.7%;
+  height: 70px;
+  width: 70px;
+  /* display: inline; */
+  position: absolute;
+  stroke: #ff8b45;
+  left: 33%;
+  top: 1.7%;
 }
 header h1 {
-    background-color: #d0ebff;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-weight: 700;
-    font-style: oblique;
-    font-size: 64px;
+  /* background-color: #d0ebff; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-style: oblique;
+  font-size: 64px;
+  color: #fff;
 }
